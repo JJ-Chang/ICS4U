@@ -1,0 +1,58 @@
+*Assignment #3 – OOP: My Favourite Movies*
+Due Date: __________________________
+
+For this assignment, you will be writing a Java program that reads in a file that contains a list of movies, and
+then allow the user to find movie information based on the search criteria.
+
+In the input file, each line contains 3 pieces of information:
+ Rating of the movie – an integer or real number followed by % sign (ie. 43.8%)
+ Movie title – any number of words
+ Genre –always one word
+
+Your program should allow the user to perform two actions:
+
+1. It should repeatedly ask the user for a movie title and display the stats, until the user types in the
+word “exit”.
+
+Sample output:
+Movie title: Captain Marvel
+Genre: Action
+Rating: 78.0%
+Ranking: 2 out of 15 ( notice the output includes the total # of entries)
+
+2. It should also allow the user to enter in a genre, and the program will list all the movies and
+their information of that genre, IN ALPHABETICAL order of the title.
+The output would be similar to above, except there may be more than one movie listed.
+
+Extra Hints and Comments:
+
+1. The file will be given in the following format:
+Rating Title Genre
+e.g. 97.1% The Social Network Drama
+
+2. You should create a new class to keep track of the movie information (rating, title genre.)
+ To make this simpler, we will assume that the rating and the genre fields can be
+duplicated, but the title field is always unique. In other words, each movie occurs only
+ONCE in the movie file.
+ The genre field is always one word.
+
+3. Use ArrayLists to implement your list of objects. DO NOT use Arrays.
+
+4. You must use Binary Search to search for movie titles and genres -- – not allowed to use loops to
+search through the list of names and powers.
+
+5. Make this efficient – minimize the amount of sorting that needs to be done!
+
+6. Remember to do all the proper error checks. For example, if the title entered in does not exist,
+capital genre should be same as lower case, etc.
+
+7. There WILL be improper inputs in the input file. The ONLY time the line should be skipped, is if
+at least one piece of information is missing.
+
+ICS4U1 Date: ______________________
+BONUS:
+(+1 mark) - Allow for duplicate movie titles
+
+- When title/genre is searched for, you will ask the user how they want the result to be
+sorted. It can be sorted alphabetically by genre (if title is searched) or title (if genre is
+searched), or by ranking from highest to lowest.
