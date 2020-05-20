@@ -1,0 +1,63 @@
+Assignment #1 – Java Review and Using System Methods
+Due Date: _____________________________
+
+Efficiency will be taken into account with these programs.
+
+The first problem is a simple problem that gives you a chance to try some basic input and output while
+handling exceptions. It also reviews simple loops and calculations.
+
+A. Write a program that enters the name, price and quantity on hand for one or more products. For
+each product, your program should display the inputted information as well as the total value of
+each product (quantity × price). After all of the product information has been inputted, your
+program should display the total value of all the products entered, as well as the product with the
+highest total value – display both the name of the product and its value. Since the product
+information is not needed after being displayed, you should not use arrays to solve this problem.
+Here is a sample input/output for this assignment. The format of your output should match this.
+Inventory Management Program
+Please enter the name of the next product: Widgets
+Please enter the unit price for Widgets: $4.67
+How many Widgets do you have on hand?: 10
+You have 10 Widgets @ $4.67 for a total value of: $46.70
+Do you have any more products? (y/n): y
+Please enter the name of the next product: Large Widgets
+Please enter the unit price for Large Widgets: $9.67
+How many Large Widgets do you have on hand?: 2
+You have 2 Large Widgets @ $9.67 for a total value of: $19.34
+Do you have any more products? (y/n): n
+The total value of all inventory is: $66.04
+The item with the highest total value is $46.70 for Widgets.
+Thank you for using the Inventory Management Program
+You must also make sure that I cannot “crash” your program. For example, when entering the price,
+you should re-ask if the entered amount is a negative number, or not a number at all.
+
+B. If you multiply certain integer numbers by 3, the resulting product is made up of the same digits as
+the original number. For example, if you triple the number 24714, you get 72441, which contains the
+same 5 digits ('2', '4', '7', '1' and '4') as 24714.
+Write a Java program to find all digit numbers that satisfy this property, where .
+(You will ask the user to enter .)
+Note: 01234 is not a 5 digit number.
+
+C. A palindrome is a string of characters that is the same forwards as it is backwards
+(e.g. “ABCDDCBA”). Write a Java program that finds the largest palindrome inside a given string.
+For example, given the string “ABAABCCBADEFEDGHGDEFEDJKLLKJ”, the largest palindrome
+starts with the 10th character and is 13 characters long (“DEFEDGHGDEFED”).
+Your program should read the string to check from a text file. You should output the starting
+position and the length of the largest palindrome. You should also output the longest palindrome.
+If there is more than one palindrome with the longest length, you should output the one that
+appears first. You can assume that the input file will contain only the letters ‘A’ to ‘Z’ with no more
+than 100,000 characters. Here is another example:
+File input:
+BCDRADAREFRADARGHI
+Screen Output:
+Finding the largest palindrome
+Largest palindrome: RADAR
+Starting position: 4
+Length: 5
+Program is complete
+FINAL REMINDERS:
+ Don’t forget your comments in each program.
+(Introductory, method, and internal comments)
+ #B, C: You must write methods in both programs.
+ #B, C: Must read in input from text files. Make sure it can read in multiple lines of input.
+ #C: Efficiency is important! (ie. The program cannot run forever when there are more than
+1000 characters in the input string.)
